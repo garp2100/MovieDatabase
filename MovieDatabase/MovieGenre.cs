@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieDatabase
 {
-    public enum MovieGenre
+    public enum MovieGenre //public enum that holds movie genres 
     {   
         Animated,
         Drama,
