@@ -8,12 +8,18 @@ namespace MovieDatabase
 {
     public class Movie
     {
-        public Movie(string argTitle, MovieGenre argGenre) //constructor for the movie object passing a string and an enum
+        public Movie(string argTitle, string argCategory) //constructor for the movie object passing a string and an enum
         {
             Title = argTitle;
-            Genre = argGenre;
+            Category = argCategory;
         }
         public string Title { get; set; }
-        public MovieGenre Genre { get; set; }
+        public string Category { get; set; }
+
+        public void PrintMovieSelection()
+        {
+            Console.WriteLine(Title);
+            Console.WriteLine(Category + "\n");
+        }
     }
 }
